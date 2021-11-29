@@ -1,6 +1,6 @@
-package com.example.faqserver.entity.base;
+package com.example.entity.base;
 
-import com.example.faqserver.utils.DateUtils;
+import com.example.utils.DateUtils;
 import lombok.Data;
 
 import javax.persistence.Column;

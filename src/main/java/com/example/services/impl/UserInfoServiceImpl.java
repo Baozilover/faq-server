@@ -1,21 +1,23 @@
-package com.example.faqserver.services.impl;
+package com.example.services.impl;
 
-import com.example.faqserver.CustomException;
-import com.example.faqserver.entity.UserInfo;
-import com.example.faqserver.repository.UserInfoRepository;
-import com.example.faqserver.utils.ErrorCode;
+import com.example.CustomException;
+import com.example.entity.UserInfo;
+import com.example.repository.UserInfoRepository;
+import com.example.services.UserInfoService;
+import com.example.utils.ErrorCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
-public class UserInfoServiceImpl {
+public class UserInfoServiceImpl implements UserInfoService {
 
     @Autowired
     private UserInfoRepository userInfoRepository;
 
-    public UserInfo register(String username,String password) throws CustomException{
+    @Override
+    public String register(String username,String password) throws CustomException{
         Optional<UserInfo> userInfo = userInfoRepository.getByUsername(username);
         if(!userInfo.isEmpty()){
             throw new CustomException(ErrorCode.E00001);
@@ -23,7 +25,6 @@ public class UserInfoServiceImpl {
 
         UserInfo newUser = new UserInfo();
         newUser.setUsername(username);
-        newUser.setPassword(password);
-        return userInfoRepository.saveAndFlush(newUser);
+        return "success";
     }
 }

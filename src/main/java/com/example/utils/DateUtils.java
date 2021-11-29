@@ -1,4 +1,4 @@
-package com.example.faqserver.utils;
+package com.example.utils;
 
 import org.springframework.lang.NonNull;
 import org.springframework.util.Assert;

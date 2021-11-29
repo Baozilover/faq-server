@@ -1,6 +1,6 @@
-package com.example.faqserver;
+package com.example;
 
-import com.example.faqserver.utils.ErrorCode;
+import com.example.utils.ErrorCode;
 
 public class CustomException extends Exception{
 

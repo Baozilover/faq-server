@@ -1,7 +1,7 @@
-package com.example.faqserver.repository;
+package com.example.repository;
 
-import com.example.faqserver.entity.UserInfo;
-import com.example.faqserver.repository.base.BaseRepository;
+import com.example.entity.UserInfo;
+import com.example.repository.base.BaseRepository;
 
 import java.util.Optional;
 

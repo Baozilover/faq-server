@@ -1,4 +1,4 @@
-package com.example.faqserver.config;
+package com.example.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity
+//@EnableGlobalMethodSecurity
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Bean

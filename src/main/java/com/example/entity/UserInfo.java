@@ -1,6 +1,6 @@
-package com.example.faqserver.entity;
+package com.example.entity;
 
-import com.example.faqserver.entity.base.BaseEntity;
+import com.example.entity.base.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

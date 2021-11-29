@@ -1,4 +1,4 @@
-package com.example.faqserver.utils;
+package com.example.utils;
 
 public enum ErrorCode {
 
