@@ -7,7 +7,7 @@ import com.example.CustomException;
  */
 public interface HttpRequestService {
 
-    Object post() throws CustomException;
+    Object getAnswerFromApi(String consName, String typr) throws CustomException;
 
     Object sendFaqRequest(String username, String question) throws CustomException;
 }
