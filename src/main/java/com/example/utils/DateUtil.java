@@ -6,8 +6,8 @@ import org.springframework.util.Assert;
 import java.util.Calendar;
 import java.util.Date;
 
-public class DateUtils {
-    private DateUtils() {
+public class DateUtil {
+    private DateUtil() {
     }
 
     /**

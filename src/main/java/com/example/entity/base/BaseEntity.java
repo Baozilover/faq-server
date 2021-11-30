@@ -1,6 +1,6 @@
 package com.example.entity.base;
 
-import com.example.utils.DateUtils;
+import com.example.utils.DateUtil;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -23,7 +23,7 @@ public class BaseEntity {
 
     @PrePersist
     protected void prePersist(){
-        Date now = DateUtils.now();
+        Date now = DateUtil.now();
 
         if(createTime == null){
             createTime = now;
